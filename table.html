@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e309c4c8d3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./table.css">
+  <title>Table</title>
+</head>
+<body>
+  <header>
+    <h1>
+      <li><a href="./index.html">Portfolio</a></li>
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./resume.html">Resume</a></li>
+        <li><a href="./media.html">Media</a></li>
+        <li><a href="./table.html">Time-Table</a></li>
+      </ul>
+    </nav>
+  </header>
+  <table id="class-timetable">
+    <caption>Weekly Class Schedule</caption>
+    <thead>
+      <tr>
+        <th scope="col">Day</th>
+        <th scope="col">8–10am</th>
+        <th scope="col">10–12pm</th>
+        <th scope="col">12–1pm</th>
+        <th scope="col">1–3pm</th>
+        <th scope="col">3–5pm</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Monday</th>
+        <td>Math</td>
+        <td rowspan="2">English</td>
+        <td rowspan="5">Break</td>
+        <td>History</td>
+        <td>PE</td>
+      </tr>
+      <tr>
+        <th scope="row">Tuesday</th>
+        <td class="highlight">Science</td>
+        <td>Geography</td>
+        <td>Art</td>
+      </tr>
+      <tr>
+        <th scope="row">Wednesday</th>
+        <td colspan="2">Computer Science</td>
+        <td class="highlight">Science</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">Thursday</th>
+        <td>Math</td>
+        <td>English</td>
+        <td>Music</td>
+        <td class="highlight">Science</td>
+      </tr>
+      <tr>
+        <th scope="row">Friday</th>
+        <td></td>
+        <td>English</td>
+        <td colspan="2">Free Study</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table id="teachers">
+    <caption>Subject Teachers</caption>
+    <thead>
+      <tr>
+        <th scope="col">Subject</th>
+        <th scope="col">Teacher</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Math</td><td>Mr. M</td></tr>
+      <tr><td>English</td><td>Mrs. E</td></tr>
+      <tr><td>Science</td><td>Dr. S</td></tr>
+      <tr><td>History</td><td>Ms. H</td></tr>
+      <tr><td>Geography</td><td>Mr. G</td></tr>
+      <tr><td>Art</td><td>Ms. A</td></tr>
+      <tr><td>PE</td><td>Coach P</td></tr>
+      <tr><td>Computer Science</td><td>Mr. C</td></tr>
+      <tr><td>Music</td><td>Mrs. M</td></tr>
+    </tbody>
+  </table>
+
+  <footer>
+    <h1>Portfolio</h1>
+    <ul>
+      <li><a href="./index.html">Portfolio</a></li>
+      <li><a href="./resume.html">Resume</a></li>
+      <li><a href="./blog.html">Blog</a></li>
+      <li><a href="./media.html">Media</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./table.html">Table</a></li>
+    </ul>
+    <div class="icon">
+      <i class="fa-regular fa-envelope"> chioma.woweffect@gmail.com</i>
+      <i class="fa-solid fa-phone-flip"> 08024500971</i>
+      <i class="fa-brands fa-whatsapp"> 09121012175</i>
+    </div>
+  </footer>
+</body>
+</html>
