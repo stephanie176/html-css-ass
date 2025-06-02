@@ -21,6 +21,10 @@ header nav ul li {
   padding: 20px;
 }
 
+header nav ul {
+  margin-left: 350px;
+}
+
 li a {
   text-decoration: none; 
   color: black;         
