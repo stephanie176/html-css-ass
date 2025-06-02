@@ -21,11 +21,6 @@ header nav ul li {
   padding: 20px;
 }
 
-header nav ul {
-  position: relative;
-  left: 450px;
-}
-
 li a {
   text-decoration: none; 
   color: black;         
