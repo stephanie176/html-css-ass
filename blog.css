@@ -1,9 +1,9 @@
-body {
-  font-family: Fraunces, serif;
+* {
+  box-sizing: border-box;
 }
 
-form {
-  margin-bottom: 30px;
+body {
+  font-family: Fraunces, serif;
 }
 
 header {
@@ -11,39 +11,37 @@ header {
   padding: 10px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-header h1 {
-  margin-right: 100px;
-  margin-bottom: 25px;
-  list-style-type: none;
-}
-
-header nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-  padding: 20px;
+header h1 a {
+  text-decoration: none;
+  color: black;
 }
 
 header nav ul {
-  margin-left: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  list-style-type: none;
+  margin-right: 30px;
 }
 
-ul {
-  list-style-type: none;
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;       
+}
+
+nav ul li a:hover, footer ul li a:hover {
+  color: #353536;
+  transition: color 0.3s ease;
 }
 
 aside nav ul li {
   margin-bottom: 50px;
-}
-
-li a {
-  text-decoration: none; 
-  color: black;         
-}
-
-li a:visited {
-  color: black; 
+  list-style-type: none;
 }
 
 .container {
@@ -59,8 +57,8 @@ aside {
 }
 
 main {
-  flex: 4;
-  padding: 15px;
+  flex: 5;
+  padding: 10px;
   border: 1px solid #ccc;
 }
 
@@ -69,27 +67,71 @@ input[type=search] {
   height: 35px;
   border-radius: 5px;
   border: 1px solid gray;
+  margin-bottom: 20px;
 }
 
 footer {
-  height: 200px;
-  background-color: #cecccc;
-  padding: 10px;
+  background-color: #a1a1a1;
+  padding: 1.5rem 1rem;
   text-align: center;
 }
 
 footer ul {
   list-style-type: none;
-  padding: 0;
   display: flex;
-  justify-content: center;
-  gap: 20px;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  margin-bottom: 1rem;
 }
 
-.icons {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.icon i {
+  display: block;
+  margin-top: 5px;
+  color: rgb(73, 72, 72);
+  word-spacing: 5px;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav ul li {
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  input[type=search] {
+    width: 100%;
+  }
+
+  .container {
+    display: block;
+  }
+
+  aside nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  aside {
+    height: 11vw;
+  }
 }
