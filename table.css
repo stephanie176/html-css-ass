@@ -43,6 +43,11 @@ table {
   margin-bottom: 40px;
 }
 
+.table {
+  overflow-x: auto; 
+  width: 100%;
+}
+
 th, td {
   border: 1px solid black;
   padding: 10px;
@@ -66,7 +71,7 @@ tr:nth-child(even) {
 }
 
 footer {
-  background-color: #a1a1a1;
+  background-color: hsl(169, 25%, 42%);
   padding: 1.5rem 1rem;
   text-align: center;
 }
@@ -88,6 +93,10 @@ footer ul {
   word-spacing: 5px;
 }
 
+.icon a {
+  color: rgb(73, 72, 72);
+}
+
 @media (max-width: 600px) {
   header {
     flex-direction: column;
@@ -100,10 +109,6 @@ footer ul {
     margin-top: 0;
   }
 
-  #class-timetable {
-    width: 100%;
-  }
-
   header h1 a {
     font-size: 40px;
   }
@@ -113,6 +118,6 @@ footer ul {
   }
 
   a {
-    font-size: x-large;
+    font-size: large;
   }
 }
