@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #7966a5;
+  background-color: hsl(169, 83%, 25%);
   padding: 10px;
   display: flex;
   align-items: center;
@@ -15,7 +15,7 @@ header {
   flex-wrap: wrap;
 }
 
-header h1 a {
+a {
   text-decoration: none;
   color: black;
 }
@@ -29,14 +29,12 @@ nav ul {
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: black;
   font-weight: 500;
 }
 
 nav ul li a:hover, footer ul li a:hover {
-  color: #353536;
-  transition: color 0.3s ease;
+  color: white;
+  transition: color 0.1s ease;
 }
 
 table {
@@ -81,11 +79,6 @@ footer ul {
   gap: 15px;
   padding: 0;
   margin-bottom: 1rem;
-}
-
-footer a {
-  color: black;
-  text-decoration: none;
 }
 
 .icon i {

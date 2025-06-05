@@ -4,10 +4,11 @@
 
 body {
   font-family: Fraunces, serif;
+  background-color: hsl(148, 38%, 91%);
 }
 
 header {
-  background-color: #7966a5;
+  background-color: hsl(169, 83%, 25%);
   padding: 10px;
   display: flex;
   align-items: center;
@@ -15,7 +16,7 @@ header {
   flex-wrap: wrap;
 }
 
-header h1 a {
+a {
   text-decoration: none;
   color: black;
 }
@@ -29,18 +30,42 @@ nav ul {
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: black;
   font-weight: 500;       
 }
 
 nav ul li a:hover, footer ul li a:hover {
-  color: #353536;
+  color: white;
   transition: color 0.3s ease;
 }
 
-input[type=text], input[type=email] {
-  width: 500px;
+.form {
+  background-color: white;
+  padding: 20px;
+  width: 650px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+.name {
+  display: flex;
+  gap: 15px;
+}
+
+input[type=text] {
+  width: 300px;
+}
+
+input[type=email] {
+  width: 100%;
+}
+
+select {
+  width: 20%;
+}
+
+input[type=text], input[type=email], select {
   height: 30px;
   border-radius: 5px;
   border: 1px solid gray;
@@ -48,26 +73,41 @@ input[type=text], input[type=email] {
 
 textarea {
   width: 500px;
-  height: 200px;
+  height: 120px;
   resize: none;
   border-radius: 5px;
 }    
 
+.required::after {
+  content: " *";
+  color: red;
+  font-size: 15px;
+}
+
 button {
-  padding: 7px;
-  border-radius: 7px;
+  padding: 14px 9px;
+  border: none;
+  color: white ;
+  border-radius: 4px;
   margin-left: 40px;
-  width: 70px;
-  background-color: #cecccc;
+  width: 250px;
+  background-color: hsl(169, 82%, 27%);
   margin-bottom: 20px;
 }
 
 button:hover {
   cursor: pointer;
+  background-color: hsl(169, 89%, 18%);
+}
+
+.cta {
+  position:absolute;
+  right: 30px;
+  font-weight: 500;
 }
 
 footer {
-  background-color: #a1a1a1;
+  background-color: hsl(169, 25%, 42%);
   padding: 1.5rem 1rem;
   text-align: center;
 }
@@ -80,11 +120,6 @@ footer ul {
   gap: 15px;
   padding: 0;
   margin-bottom: 1rem;
-}
-
-footer a {
-  color: black;
-  text-decoration: none;
 }
 
 .icon i {
@@ -108,4 +143,14 @@ footer a {
   input[type=text], input[type=email], textarea {
   width: 100%;
   }
+
+  .form {
+    width: 100%;
+  }
+
+  .cta {
+    position: relative;
+    left: 5px;
+  }
+
 }

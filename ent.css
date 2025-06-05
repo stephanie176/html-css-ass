@@ -9,7 +9,7 @@ body {
 }
 
 .head {
-  background-image: url(./images/blog-bg.jpg);
+  background-image: url(./images/ent-bg.jpg);
   background-position: center;
   background-size: cover;
   height: 500px;
@@ -29,38 +29,10 @@ header {
   color: white;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-header nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-}
-
-header nav ul li {
-  padding: 0px;
-}
-
-header nav ul li a{
-  padding: 20px;
-}
-
-nav ul li a {
-  font-weight: 500;       
-}
-
-.blog-nav {
-  position: relative;
-  top: 180px;
-}
 .blog-nav nav ul {
   display: flex; 
   flex-wrap: wrap;
   list-style-type: none;
-  margin-top: 70px;
 }
 
 .blog-nav nav ul li {
@@ -71,8 +43,17 @@ nav ul li a {
   padding: 20px;
 }
 
-.blog-nav nav ul li a:hover, header nav ul li a:hover {
-  background-color: rgb(29, 19, 19);
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a {
+  font-weight: 500;       
+}
+
+.blog-nav nav ul li a:hover {
+  background-color: #6A0DAD;
 }
 
 footer a:hover {
@@ -95,6 +76,13 @@ input[type=search]:hover {
 .head h1 {
   width: fit-content;
   margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.head p {
+  width: fit-content;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -141,14 +129,14 @@ footer {
   flex-wrap: wrap;
   text-align: center;
   gap: 70px;
-  background-color: rgba(145, 69, 56, 0.842);
+  background-color: #5a4768;
   padding: 1.5rem 5rem;
 }
 
 footer ul {
   list-style-type: none;
   justify-content: left;
-  text-align: left;
+  text-align: left
 }
 
 footer li {
@@ -168,10 +156,6 @@ footer li {
 }
 
 @media (max-width: 600px) {
-  .head {
-    height: 510px;
-  }
-  
   header nav ul li {
     padding: 10px;
   }
