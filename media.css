@@ -54,6 +54,7 @@ img {
   padding: 15px;
   border: 1px solid rgb(214, 212, 212);
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .image:hover img{
@@ -61,9 +62,7 @@ img {
 }
 
 .image:hover {
-  cursor: pointer;
   background-color: rgb(202, 198, 198);
-  width: 300px;
 }
 
 footer {
